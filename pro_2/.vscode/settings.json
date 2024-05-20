@@ -1,0 +1,7 @@
+{
+    "cortex-debug.gdbPath": "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb",
+    "cortex-debug.JLinkGDBServerPath": "/home/giang/opt/SEGGER/JLink_Linux_V796h_x86_64/JLinkGDBServer",
+    "cortex-debug.stutilPath": "/home/giang/Downloads/stlink-1.8.0/bin/st-util",
+    "cortex-debug.armToolchainPath": "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/bin",
+
+}

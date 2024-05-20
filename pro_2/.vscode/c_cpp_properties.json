@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include",
+                "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/",
+                "/lib/gcc/arm-none-eabi/10.3.1/include",
+                "/lib/gcc/arm-none-eabi/10.3.1/include-fixed",
+                "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine",
+                "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib-nano",
+                "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys"
+            ],
+            "defines": [
+                "STM32F411xE",
+                "USE_HAL_DRIVER"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "${workspaceRoot}/Core/Inc",
+                    "${workspaceRoot}/Drivers/STM32F4xx_HAL_Driver/Inc",
+                    "${workspaceRoot}/Drivers/CMSIS/Include",
+                    "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                    "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include",
+                    "/home/giang/Downloads/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1",
+                    "/lib/gcc/arm-none-eabi/10.3.1/include",
+                    "/lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
+            },
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc"
+        }
+    ],
+    "version": 4
+}

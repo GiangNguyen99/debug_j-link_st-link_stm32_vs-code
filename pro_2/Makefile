@@ -137,6 +137,10 @@ endif
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 
 
+# My C flags:
+CFLAGS += -Wno-unused-variable
+
+
 #######################################
 # LDFLAGS
 #######################################
@@ -197,3 +201,27 @@ clean:
 -include $(wildcard $(BUILD_DIR)/*.d)
 
 # *** EOF ***
+
+
+
+###
+## CUSTOM COMMANDS
+###
+
+# Flash with J-Link
+# Configure device name, everything else should remain the same
+jflash: $(BUILD_DIR)/jflash
+	JLinkExe -commanderscript $<
+# Change to yours
+device = STM32F411VE
+# First create a file with all commands
+$(BUILD_DIR)/jflash: $(BUILD_DIR)/$(TARGET).bin
+	@touch $@
+	@echo device $(device) > $@
+	@echo -e si 1'\n'speed 4000 >> $@
+	@echo loadbin $< 0x8000000 >> $@
+	@echo -e r'\n'g'\n'qc >> $@
+
+# FLash with ST-LINK
+stflash: $(BUILD_DIR)/$(TARGET).bin
+	st-flash --reset write $< 0x8000000
